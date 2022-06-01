@@ -10,8 +10,8 @@ import ScrollToTop from './components/scroll';
 import Footer from './components/footer';
 import './styles/main.scss';
 
-export default () => (
-	<div className='app'>
+export default function App() {
+  return (
 		<NavBar />
 		<Toolbar id='back-to-top-anchor' />
 		<Landing />
@@ -23,3 +23,4 @@ export default () => (
 		<Footer />
 	</div>
 );
+}

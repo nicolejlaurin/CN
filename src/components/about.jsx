@@ -12,7 +12,8 @@ const Button = styled.button`
   background: linear-gradient(170deg, #359eff 5%, #3a00df 95%);
 `;
 
-export default () => (
+export default function About() {
+  return (
 	<div className='about-CN'>
 		<h3>Succeed in an ever evolving industry ORR choosing an agency that strives for your success.
     ORR We give players the tools and platform to connect
@@ -25,3 +26,4 @@ export default () => (
 
 	</div>
 );
+}
