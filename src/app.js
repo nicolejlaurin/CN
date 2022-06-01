@@ -8,7 +8,7 @@ import Sports from './components/sports';
 import Contact from './components/contact';
 import ScrollToTop from './components/scroll';
 import Footer from './components/footer';
-import './styles/main.scss';
+import './main.scss';
 
 export default () => (
 	<div className='app'>
