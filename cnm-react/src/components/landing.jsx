@@ -2,16 +2,17 @@ import React from 'react';
 
 export default () => (
 	<div className='landing'>
-		<h1 className='name'>
-			Clints Company
-		</h1>
+		<h2>
+			CN Management
+		</h2>
 		<div className='info'>
-			<h2>
+			<p>
 				We develop long lasting legacies for rising players,
         supporting them every step along the way and influence
         the sports industry for the better.
-			</h2>
-      <button class="button" onclick="">Get Started</button>
+			</p>
+			<button class="button button1" onclick="window.location.href='#contact'">Get Started!</button>
+
 		</div>
 	</div>
 );

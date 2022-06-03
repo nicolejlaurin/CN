@@ -1,0 +1,20 @@
+.aboutpage-CN {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: $white;
+	color: $black;
+}
+
+.aboutpage-CN h4 {
+	font-size: calc(30px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 0rem 3rem 0rem 3rem;
+	text-align: center;
+}
+
+.aboutpage-CN p {
+	font-size: calc(15px + (68 - 26) * ((100vw - 300px) / (2000 - 300)));
+	font-weight: 100;
+	padding: 3rem 3rem 0rem 3rem;
+}
