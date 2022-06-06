@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,20 @@
   "bugs": {
     "url": "https://github.com/nicolejlaurin/CN/issues"
   },
-  "homepage": "https://github.com/nicolejlaurin/CN#readme"
+  "homepage": "https://github.com/nicolejlaurin/CN",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
