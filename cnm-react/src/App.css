@@ -254,9 +254,11 @@ a.active {
 .about-CN {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
-	background-color: $white;
-	color: $black;
+	min-height: 60vh;
+	background-color: white;
+	color: black;
+  align-content: flex-start;
+
 }
 
 .about-CN h4 {
@@ -322,10 +324,10 @@ a.active {
 /*---------------------------SERVICES---------------------------*/
 
 .service {
-	min-height: 100vh;
-	background-color: $white;
-	color: $black;
-
+	min-height: 60vh;
+	background-color: white;
+	color: black;
+  align-content: flex-start;
 }
 
 .service h3 {
@@ -354,7 +356,7 @@ a.active {
   text-align: center;
   font-size: calc(30px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 300;
-  padding: 1rem 3rem 0rem 3rem;
+  padding: 1rem 1rem 0rem 0.5rem;
 }
 
 .item {
@@ -365,6 +367,7 @@ a.active {
     border-radius: 10px;
     border:5px solid rgba(0, 0, 0, 0.07);
     margin: 0 0 20px 20px;
+    align-content: flex-start;
 }
 .item:hover{
     background: #F0EFED;
@@ -374,8 +377,30 @@ a.active {
     transition: all 0.5s ease 0s;
 }
 
+.man:hover{
+  background-image:  url('./images/CN-4.jpg');
+  border-color: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: transparent;
+}
+.mark:hover{
+  background-image:  url('./images/CN-5.jpg');
+  border-color: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: transparent;
+}
+.cons:hover{
+  background-image:  url('./images/CN-6.jpg');
+  border-color: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: transparent;
+}
+
 .item:hover p{
-  color: black;
+  color: transparent;
 }
 
 .item p{
@@ -385,10 +410,17 @@ a.active {
 }
 
 @media only screen and (max-width: 768px) {
-  .service{
-    display: block;
+  .service { position: relative; }
+  .service .item{
+    position: relative;
+    top: 0;
+    left: 0;
   }
-}
+  .man{ position: relative;}
+  .mark{position: absolute;}
+  .cons{position: absolute;}
+  }
+
 
 .list p{
   text-align: left;
@@ -397,14 +429,12 @@ a.active {
 
 .descript{
   color: #ff96b2;
-
 }
 
 #container {
   display: flex;
   margin-right: 20px;
 }
-
 
 /*----------------------------------------------------------------*/
 
@@ -413,25 +443,51 @@ a.active {
 .sports {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
-	background-color: $white;
-	color: $black;
+	min-height: 60vh;
+	background-color: black;
+	color: white;
+  text-align: right;
+  padding-bottom: 40px;
 }
 
-.sports h3 {
-	text-align: center;
-	font-size: calc(30px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
+.sports h4 {
+  font-size: calc(20px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
 	font-weight: 600;
-	padding: 3rem 3rem 0rem 3rem;
+	padding: 2rem 20rem 0rem 4rem;
+  text-align: left;
 }
 
 .sports p {
-  text-align: center;
-  font-size: calc(30px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
-  font-weight: 300;
-  padding: 3rem 3rem 0rem 3rem;
+  font-size: calc(10px + (60 - 40) * ((100vw - 300px) / (2000 - 300)));
+	font-weight: 100;
+	padding: 0rem 0rem 0rem 3rem;
+  text-align: left;
 }
 
+.about-split{
+  display:flex;
+}
+
+.about-split img{
+  height: 200px;
+  width: 400px;
+  padding: 0rem 4rem 0rem 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-split{
+    display:block;
+    text-align: center;
+  }
+  .about-split img{
+    height: 50%;
+    width: 50%;
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  .about-CN p {
+  	padding: 0rem 3rem 0rem 3rem;
+  }
+}
 
 /*----------------------------------------------------------------*/
 
@@ -445,18 +501,39 @@ a.active {
 	color: $black;
 }
 
-.contact h3 {
-	text-align: center;
-	font-size: calc(30px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
+.contact h4 {
+  font-size: calc(20px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
 	font-weight: 600;
-	padding: 3rem 3rem 0rem 3rem;
+	padding: 0rem 3rem 0rem 3rem;
+	text-align: left;
 }
 
 .contact p {
-  text-align: center;
-  font-size: calc(30px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
-  font-weight: 300;
-  padding: 3rem 3rem 0rem 3rem;
+  font-size: calc(10px + (60 - 40) * ((100vw - 300px) / (2000 - 300)));
+	font-weight: 100;
+	padding: 0rem 0rem 0rem 3rem;
+}
+
+
+.contact-butt {
+  background-color: black;
+  color: white;
+  border: 2px solid #F0EFED;
+  margin: 4px 50px;
+  background-color: #000000;
+  padding: 16px 32px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 15px;
+  margin:10px;
+  width:300px;
+  margin-left:50px;
+ }
+
+.contact-butt:hover {
+  background-color: #F0EFED;
+  color: black;
+  border-color: black;
 }
 
 
@@ -464,10 +541,10 @@ a.active {
 
 .footer {
 	text-align: center;
-	background-color: $black;
-	color: $white;
-	line-height: 50px;
-	height: 50px;
+	background-color: black;
+	color: white;
+	line-height: 70px;
+	height: 70px;
 	text-align: center;
 }
 
