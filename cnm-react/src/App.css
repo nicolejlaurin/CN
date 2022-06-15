@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400&display=swap');
 
-$white: rgb(247, 247, 247);
-$black: rgb(29, 29, 29);
-$grey: rgb(44, 44, 44);
-
 .App {
   text-align: center;
 }
@@ -52,7 +48,7 @@ html {
 
 body {
 	font-family: 'Nuånito', sans-serif;
-	background-color: $white;
+	background-color:  white;
 	font-size: 16px;
 	scrollbar-width: none !important;
   margin:0px;
@@ -139,7 +135,7 @@ a.active {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	color: $black;
+	color: black;
   background-image: url('./images/CN-2.jpg');
 }
 
@@ -182,7 +178,7 @@ a.active {
 .landing h2 > a {
 	text-decoration: none;
 	transition: all 0.3s ease-in-out;
-	color: $black;
+	color: black;
 }
 
 @keyframes hover-v {
@@ -497,8 +493,8 @@ a.active {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	background-color: $white;
-	color: $black;
+	background-color: white;
+	color: black;
 }
 
 .contact h4 {
@@ -558,7 +554,7 @@ a.active {
 
 .MuiFab-secondary {
 	background-color: blue !important;
-	color: $white !important;
+	color: white !important;
 }
 
 /*----------------------------------------------------------------*/

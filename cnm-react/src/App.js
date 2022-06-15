@@ -16,8 +16,8 @@ export default function App() {
 		<Landing />
 		<About />
 		<Service />
-    <Sports />
-    <Contact />
+    	<Sports />
+    	<Contact />
 		<Footer />
 	</div>
 
