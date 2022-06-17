@@ -1,13 +1,651 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400&display=swap');
+
+.App {
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+html {
+	overflow: -moz-scrollbars-none !important;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Nuånito', sans-serif;
+	background-color:  white;
+	font-size: 16px;
+	scrollbar-width: none !important;
+  margin:0px;
+  overflow-x: hidden;
+	-ms-overflow-style: none;
+}
+
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+/*----------------------------NAV BAR-----------------------------*/
+
+.navbar-default {
+  margin: 0;
+	width: 100%;
+  background-color: black;
+  padding: 1em;
+	cursor: default;
+  border-color: transparent;
+}
+
+.navbar-default ul li {
+	display: inline-block;
+	margin-left: 35px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+}
+
+.navbar-default ul li a {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-default ul li a:hover,
+.navbar-default ul li a:focus {
+    outline: 0;
+    color: #1ee2e7;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        border: 0;
+        font-size: 2em;
+    }
+    .navbar-left img{
+      width: 100px;
+      height: 100px;
+      float:left;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul li {
+  	width: 100%;
+  	margin: 0;
+  }
+
+  .navbar-left img{
+    width: 100px;
+    display: inline-block;
+    text-align: left;
+    float: left;
+    padding-left: 40px;
+  }
+}
+
+/*----------------------------------------------------------------*/
+
+/*--------------------------LANDING PAGE--------------------------*/
+
+.landing {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: black;
+  background-image: url('./images/CN-2.jpg');
+}
+
+@media(min-width:768px) {
+  .landing p{
+    font-size: 20px;
+  	font-weight: 400;
+    padding-left: 3rem;
+    padding-right:6rem;
+  }
+  .info{
+    width:55rem; /* or whatever width you want. */
+   max-width:55rem; /* or whatever width you want. */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .landing p{
+    font-size: calc(10px + (50 - 35) * ((100vw - 300px) / (1600 - 300)));
+  	font-weight: 400;
+  	padding: 0rem 2rem 0rem 3rem;
+  }
+}
+
+.landing h1 {
+	font-size: calc(60px + (220 - 60) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 10rem 1rem 10rem 1rem;
+}
+
+.landing h1 > span {
+	font-weight: 300;
+}
+
+.landing h2 {
+	font-size: calc(40px + (90 - 40) * ((100vw - 300px) / (1600 - 300)));
+  padding: 3rem 3rem 0rem 3rem;
+}
+
+.landing h2 > a {
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	color: black;
+}
+
+@keyframes hover-v {
+	0% {
+		transform: scaleX(0);
+		height: 5px;
+	}
+	45% {
+		transform: scaleX(1.05);
+		height: 5px;
+	}
+	55% {
+		height: 5px;
+	}
+	100% {
+		transform: scaleX(1.05);
+		height: 3.8rem;
+	}
+}
+@keyframes no-hover-v {
+	0% {
+		transform: scaleX(1.05);
+		height: 3.8rem;
+	}
+	45% {
+		height: 5px;
+	}
+	55% {
+		transform: scaleX(1.05);
+		height: 5px;
+		opacity: 1;
+	}
+
+	100% {
+		transform: scaleX(0);
+		height: 5px;
+		opacity: 0.02;
+	}
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 50px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #F0EFED;
+
+ }
+
+.button1:hover {
+  background-color: #F0EFED;
+  color: black;
+}
+
+
+/*----------------------------------------------------------------*/
+
+/*----------------------------ABOUT US----------------------------*/
+
+.about-CN {
+	display: flex;
+	flex-direction: column;
+	min-height: 60vh;
+	background-color: white;
+	color: black;
+  align-content: flex-start;
+
+}
+
+.about-CN h4 {
+	font-size: calc(20px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 0rem 3rem 0rem 3rem;
+	text-align: left;
+}
+
+.about-CN p {
+	font-size: calc(10px + (60 - 40) * ((100vw - 300px) / (2000 - 300)));
+	font-weight: 100;
+	padding: 0rem 0rem 0rem 3rem;
+}
+.about-split{
+  display:flex;
+
+}
+.about-split img{
+  height: 200px;
+  width: 400px;
+  padding: 0rem 4rem 0rem 3rem;
+
+}
+
+@media only screen and (max-width: 768px) {
+  .about-split{
+    display:block;
+  }
+  .about-split img{
+    height: 50%;
+    width: 50%;
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  .about-CN p {
+  	padding: 0rem 3rem 0rem 3rem;
+  }
+}
+
+.button2 {
+  background-color: black;
+  color: white;
+  border: 2px solid #F0EFED;
+  margin: 4px 50px;
+  background-color: #000000;
+  padding: 16px 32px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 15px;
+  margin:10px;
+  width:300px;
+  margin-left:50px;
+ }
+
+.button2:hover {
+  background-color: #F0EFED;
+  color: black;
+  border-color: black;
+}
+
+/*----------------------------------------------------------------*/
+
+/*---------------------------SERVICES---------------------------*/
+
+.service {
+	min-height: 60vh;
+	background-color: white;
+	color: black;
+  align-content: flex-start;
+}
+
+.service h3 {
+	text-align: center;
+	font-size: calc(20px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 300;
+	padding: 0rem 3rem 0rem 3rem;
+  margin:auto;
+}
+.service h4 {
+	text-align: center;
+	font-size: calc(10px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 300;
+	padding: 1rem 3rem 0rem 3rem;
+  margin:auto;
+}
+.service h5 {
+	text-align: center;
+	font-size: calc(10px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 400;
+	padding: 0.5rem 3rem 0rem 3rem;
+  margin:auto;
+}
+
+.service p {
+  text-align: center;
+  font-size: calc(30px + (100 - 30) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 300;
+  padding: 1rem 1rem 0rem 0.5rem;
+}
+
+.item {
+    background: #fff;
+    text-align: center;
+    padding: 30px 25px;
+    -webkit-box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    border:5px solid rgba(0, 0, 0, 0.07);
+    margin: 0 0 20px 20px;
+    align-content: flex-start;
+}
+.item:hover{
+    background: #F0EFED;
+    box-shadow:0 8px 20px 0px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .5s ease 0;
+    transition: all .5s ease 0;
+    transition: all 0.5s ease 0s;
+}
+
+.man:hover{
+  background-image:  url('./images/CN-4.jpg');
+  border-color: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: transparent;
+}
+.mark:hover{
+  background-image:  url('./images/CN-5.jpg');
+  border-color: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: transparent;
+}
+.cons:hover{
+  background-image:  url('./images/CN-6.jpg');
+  border-color: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: transparent;
+}
+
+.item:hover p{
+  color: transparent;
+}
+
+.item p{
+    font-size:15px;
+    line-height:26px;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
+  .service { position: relative; }
+  .service .item{
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .man{ position: relative;}
+  .mark{position: absolute;}
+  .cons{position: absolute;}
+  }
+
+
+.list p{
+  text-align: left;
+  text-indent: 20px;
+}
+
+.descript{
+  color: #ff96b2;
+}
+
+#container {
+  display: flex;
+  margin-right: 20px;
+}
+
+/*----------------------------------------------------------------*/
+
+/*----------------------------SPORTS------------------------------*/
+
+.sports {
+	display: flex;
+	flex-direction: column;
+	min-height: 60vh;
+	background-color: black;
+	color: white;
+  text-align: right;
+  padding-bottom: 40px;
+}
+
+.sports h4 {
+  font-size: calc(20px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 2rem 20rem 0rem 4rem;
+  text-align: left;
+}
+
+.sports p {
+  font-size: calc(10px + (60 - 40) * ((100vw - 300px) / (2000 - 300)));
+	font-weight: 100;
+	padding: 0rem 0rem 0rem 3rem;
+  text-align: left;
+}
+
+.about-split{
+  display:flex;
+}
+
+.about-split img{
+  height: 200px;
+  width: 400px;
+  padding: 0rem 4rem 0rem 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-split{
+    display:block;
+    text-align: center;
+  }
+  .about-split img{
+    height: 50%;
+    width: 50%;
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  .about-CN p {
+  	padding: 0rem 3rem 0rem 3rem;
+  }
+}
+
+/*----------------------------------------------------------------*/
+
+/*-----------------------------CONTACT----------------------------*/
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: white;
+	color: black;
+}
+
+.contact h4 {
+  font-size: calc(20px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 0rem 3rem 0rem 3rem;
+	text-align: left;
+}
+
+.contact p {
+  font-size: calc(10px + (60 - 40) * ((100vw - 300px) / (2000 - 300)));
+	font-weight: 100;
+	padding: 0rem 0rem 0rem 3rem;
+}
+
+
+.contact-butt {
+  background-color: black;
+  color: white;
+  border: 2px solid #F0EFED;
+  margin: 4px 50px;
+  background-color: #000000;
+  padding: 16px 32px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 15px;
+  margin:10px;
+  width:300px;
+  margin-left:50px;
+ }
+
+.contact-butt:hover {
+  background-color: #F0EFED;
+  color: black;
+  border-color: black;
+}
+
+
+/*------------------------------FOOTER----------------------------*/
+
+.footer {
+	text-align: center;
+	background-color: black;
+	color: white;
+	line-height: 70px;
+	height: 70px;
+	text-align: center;
+}
+
+.footer-content {
+	vertical-align: middle;
+}
+
+/*----------------------------------------------------------------*/
+
+/*----------------------------SCROLL------------------------------*/
+
+.MuiFab-secondary {
+	background-color: blue !important;
+	color: white !important;
+}
+
+/*----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*----------------------------ABOUT PAGE CSS------------------------------*/
+
+
+
+.aboutpage-CN {
+	display: flex;
+	flex-direction: column;
+	min-height: 60vh;
+	background-color: white;
+	color: black;
+  align-content: flex-start;
+}
+
+.aboutpage-CN h4 {
+	font-size: calc(20px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 0rem 3rem 0rem 3rem;
+	text-align: left;
+}
+
+.aboutpage-CN p {
+	font-size: calc(10px + (60 - 40) * ((100vw - 300px) / (2000 - 300)));
+	font-weight: 100;
+	padding: 0rem 3rem 0rem 3rem;
+}
+
+
+.button_abtpg {
+  background-color: black;
+  color: white;
+  border: 2px solid #F0EFED;
+  margin: 4px 50px;
+  background-color: #000000;
+  padding: 16px 32px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 15px;
+  margin:10px;
+  width:300px;
+  margin-left:50px;
+ }
+
+.button_abtpg:hover {
+  background-color: #F0EFED;
+  color: black;
+  border-color: black;
+}
+
+/*----------------------------CLIENT PAGE CSS------------------------------*/
+
+
+
+.Client {
+	display: flex;
+	flex-direction: column;
+	min-height: 60vh;
+	background-color: white;
+	color: black;
+  align-content: flex-start;
+}
+
+.Client h4 {
+	font-size: calc(20px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 0rem 3rem 0rem 3rem;
+	text-align: left;
+}
+
+.Client p {
+	font-size: calc(10px + (60 - 40) * ((100vw - 300px) / (2000 - 300)));
+	font-weight: 100;
+	padding: 0rem 3rem 0rem 3rem;
+}
+
+.list-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(255,255,255,1);
+    z-index: 1;
 }

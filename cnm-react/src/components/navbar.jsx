@@ -7,11 +7,12 @@ export default function Navbar() {
   <nav class="navbar-default">
           <div class="collapse">
           <a class="navbar-left" href="#Home" id="logo">
-            <img src={Img_logo}></img>
+            <img src={Img_logo} alt="Image"></img>
           </a>
+  
           <nav>
               <ul class="nav">
-                  <li><a class="page-scroll" href="#about">About Us</a></li>
+                  <li><a class="page-scroll" href="../aboutpage.html">About Us</a></li>
                   <li><a class="page-scroll" href="#services">Services</a></li>
                   <li><a class="page-scroll" href="#client">Client Representation</a></li>
                   <li><a class="page-scroll" href="#FAQ">FAQ's</a></li>

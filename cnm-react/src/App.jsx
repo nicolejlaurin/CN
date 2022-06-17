@@ -7,6 +7,8 @@ import Service from './components/service';
 import Sports from './components/sports';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
 export default function App() {
@@ -16,8 +18,8 @@ export default function App() {
 		<Landing />
 		<About />
 		<Service />
-    	<Sports />
-    	<Contact />
+    <Sports />
+    <Contact />
 		<Footer />
 	</div>
 
