@@ -8,11 +8,14 @@ import Landing from './components/landing';
 import About from './components/about';
 import AboutPage from './components/aboutpage';
 import Service from './components/service';
+import ServicePage from './components/servicepage';
 import Sports from './components/sports';
 import Contact from './components/contact';
+import ContactPage from './components/contactpage';
 import Footer from './components/footer';
 import Navigation from './components/Navigation';
 import Client from './components/client';
+import FAQ from './components/faq';
 
 
 export default function App() {
@@ -42,13 +45,17 @@ ReactDOM.render(
   		<Service />
       <Sports />
       <Contact />
+  
+
   		</>} />
       <Route path="/about" element={<About />} />
       <Route path="/aboutpage" element={<AboutPage />} />
-      <Route path="/service" element={<Service />} />
+      <Route path="/service" element={<ServicePage />} />
+      <Route path="/faq" element={<FAQ />} />
       <Route path="/client" element={<Client />} />
       <Route path="/sports" element={<Sports />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/contactpage" element={<ContactPage />} />
     </Routes>
     <Footer />
   </Router>,

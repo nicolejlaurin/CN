@@ -649,3 +649,303 @@ a.active {
     background: rgba(255,255,255,1);
     z-index: 1;
 }
+
+
+/*----------------------------CLIENT PAGE CSS------------------------------*/
+
+
+.Service-CN {
+	display: flex;
+	flex-direction: column;
+	min-height: 60vh;
+	background-color: white;
+	color: black;
+  align-content: flex-start;
+}
+
+.Service-CN h3 {
+	font-size: calc(20px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 0rem 3rem 0rem 3rem;
+	text-align: left;
+}
+
+.Service-CN h4 {
+	font-size: calc(20px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 0rem 3rem 0rem 3rem;
+	text-align: left;
+}
+
+.Service-CN p {
+	font-size: calc(10px + (60 - 40) * ((100vw - 300px) / (2000 - 300)));
+	font-weight: 100;
+	padding: 0rem 3rem 0rem 3rem;
+}
+
+
+
+/*----------------------------FAQ PAGE CSS------------------------------*/
+
+
+.FAQ-CN {
+	display: flex;
+	flex-direction: column;
+	min-height: 60vh;
+	background-color: white;
+	color: black;
+  align-content: flex-start;
+}
+
+.FAQ-CN h3 {
+	font-size: calc(20px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 0rem 3rem 0rem 3rem;
+	text-align: left;
+}
+
+.FAQ-CN h4 {
+	font-size: calc(10px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 0rem 3rem 0rem 3rem;
+	text-align: left;
+}
+
+.FAQ-CN p {
+	font-size: calc(10px + (60 - 40) * ((100vw - 300px) / (2000 - 300)));
+	font-weight: 100;
+	padding: 0rem 3rem 0rem 3rem;
+}
+
+
+
+/*----------------------------FAQ PAGE CSS------------------------------*/
+
+
+.contactpage-CN {
+	display: flex;
+	flex-direction: column;
+	min-height: 60vh;
+	background-color: white;
+	color: black;
+  align-content: flex-start;
+}
+
+.contactpage-CN h3 {
+	font-size: calc(20px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 0rem 3rem 0rem 3rem;
+	text-align: left;
+}
+
+.contactpage-CN h4 {
+	font-size: calc(20px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+	padding: 0rem 3rem 0rem 3rem;
+	text-align: left;
+}
+
+.contactpage-CN p {
+	font-size: calc(10px + (60 - 40) * ((100vw - 300px) / (2000 - 300)));
+	font-weight: 100;
+	padding: 0rem 3rem 0rem 3rem;
+}
+
+.contactpage-CN fieldset{
+  padding: 3rem 3rem 3rem 3rem;
+
+}
+
+#contact-box{
+  padding: 0rem 25rem 3rem 3rem;
+
+}
+
+.contactpage-CN label{
+  padding: 0rem 4rem 0rem 0rem;
+
+}
+
+.text-line {
+    background-color: transparent;
+    color: black;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid black 1px;
+    padding: 2rem 7rem 0rem 0rem;
+    font-size: 20px;
+}
+
+.text-line:hover {
+  border-left: black;
+  border-right: black;
+}
+
+.contact-box{
+  color: black;
+  display: flex;
+}
+
+.contact-left{
+  flex-basis: 50%;
+  padding: 40px 60px;
+  border: black;
+  background: white;
+  border: 2px solid black;
+}
+
+.contact-right{
+  flex-basis: 40%;
+  background: black;
+  color: black;
+  border: 2px solid black;
+}
+.input-group .top{
+  color: white;
+}
+
+.input-group .bottom{
+  color:white;
+  font-size: 15px;
+}
+.input-row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.input-row .input-group{
+  flex-basis: 45%;
+  padding-right: 20px;
+}
+
+.input{
+  width: 100%;
+}
+.input-group img{
+  width: 300px;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+.button-about {
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 16px 40px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button3 {
+  color: white;
+  border: 2px solid #F0EFED;
+
+ }
+
+.button3:hover {
+  background-color: #F0EFED;
+  color: black;
+}
+
+.form-control {
+  border: solid black 1px;
+  width: 100%;
+  max-width: 100%;
+  height: 3em;
+  font-size: 16px;
+  padding: 1em;
+  margin: 0.5em 0 1em 0;
+}
+
+textarea {
+  min-height: 10em;
+}
+
+.text-label-message:after{
+  display: block;
+    content: " ";
+    padding-bottom: 2px;
+
+}
+
+
+
+/*-----------test-------------*/
+
+.faq-content {
+  margin: 0 auto;
+
+}
+
+.faq-question {
+  padding: 20px 0;
+  border-bottom: 1px dotted #ccc;
+  color: black;
+}
+
+.panel-title {
+  font-size: 21px;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 68px;
+  display: block;
+  cursor: pointer;
+
+}
+
+.panel-content {
+  font-size: 20px;
+  padding: 0px 14px;
+  margin: 0 20px;
+  
+  height: 0;
+  color: black;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.panel:checked ~ .panel-content{
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 4px;
+  z-index: 5;
+  font-size: 42px;
+  line-height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}

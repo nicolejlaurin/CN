@@ -3,7 +3,7 @@ import React from 'react';
 export default () => (
 	<div className='contact'>
 		<h4>
-    CN Agency will gives you the platform of possibilies (corny)
+    Get in touch with us! (contact)
     </h4>
 		<p>
     We provide ...
