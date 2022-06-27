@@ -16,7 +16,9 @@ import Footer from './components/footer';
 import Navigation from './components/Navigation';
 import Client from './components/client';
 import FAQ from './components/faq';
-
+import Section1 from './components/service-section1';
+import Section2 from './components/service-section2';
+import Section3 from './components/service-section3';
 
 export default function App() {
   return (
@@ -33,6 +35,10 @@ export default function App() {
 );
 }
 
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+
 //this is the links to other pages
 ReactDOM.render(
 
@@ -44,13 +50,17 @@ ReactDOM.render(
   		<About />
   		<Service />
       <Sports />
-      <Contact />
-  
-
+      <ContactPage />
   		</>} />
       <Route path="/about" element={<About />} />
       <Route path="/aboutpage" element={<AboutPage />} />
-      <Route path="/service" element={<ServicePage />} />
+      <Route path="/service" element={<>
+  		<ServicePage />
+  		<Section1 />
+  		<Section2 />
+      <Section3 />
+      
+  		</>} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/client" element={<Client />} />
       <Route path="/sports" element={<Sports />} />

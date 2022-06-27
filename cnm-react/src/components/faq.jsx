@@ -9,8 +9,8 @@ export default () => (
     <input id="q1" type="checkbox" class="panel"></input>
     <div class="plus">+</div>
     <label for="q1" class="panel-title">How do i get started?</label>
-    <div class="panel-content">
-		woodchuck would chuck all the wo</div>
+		<div class="panel-content">woodchuck would chuck all the wo</div>
+    <div class="panel-content-test">testing would chuck all the wo</div>
   </div>
 
   <div class="faq-question">
