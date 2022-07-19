@@ -17,6 +17,7 @@ export default function About() {
     </div>
     <button class="button button2" onclick="window.open('https://niclaurin.com/');">Learn more about us!</button>
 
+
   </div>
 
 );

@@ -34,6 +34,30 @@ export default () => (
 		How is CN Management going to help me?
     </h4>
 
+		<div class="container">
+			<div class="item ">
+			<h4>Management</h4>
+			<p>
+				CN Agency provides all the necessary services to further an athletes abilities and giving them a platform
+				to be seen. We offer services such as sports marketing, player management, personal consultations, NIL education...
+			</p>
+			</div>
 
+			<div class="item ">
+			<h4>Consultation</h4>
+			<p>
+				CN Agency provides all the necessary services to further an athletes abilities and giving them a platform
+				to be seen. We offer services such as sports marketing, player management, personal consultations, NIL education...
+			</p>
+			</div>
+
+			<div class="item ">
+			<h4>Consultation</h4>
+			<p>
+				CN Agency provides all the necessary services to further an athletes abilities and giving them a platform
+				to be seen. We offer services such as sports marketing, player management, personal consultations, NIL education...
+			</p>
+			</div>
+			</div>
 	</div>
 );

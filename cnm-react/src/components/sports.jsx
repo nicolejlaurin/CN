@@ -4,14 +4,13 @@ import Img_logo from '../images/CN-7.png';
 export default () => (
 	<div className='sports'>
 	<h4>
-	Event coordinating, Camp activations and More!
+	Event coordinating, camp activations and more!
 	</h4>
 		<div class="about-split">
-			<img src={Img_logo}></img>
+			<img class="about-sports-img" src={Img_logo}></img>
 		<p>
-    We provide ...
-		camp activations
-		autograph signing
+		CN Management helps athletes maximize their full potential by giving them the platform to reach perfect audience.
+		Our highly-experienced team guide our players through their entire journey, connecting them to the right poeple and brands to enhance their career to a whole new level.
     </p>
 
 		</div>
