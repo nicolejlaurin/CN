@@ -492,12 +492,6 @@ display:none;
 }
 
 
-
-
-
-
-
-
 /*----------------------------------------------------------------*/
 
 /*--------------------------LANDING PAGE--------------------------*/
@@ -545,7 +539,7 @@ display:none;
 	padding: 10rem 1rem 10rem 1rem;
 }
 
-.landing h1   span {
+.landing h1 span {
 	font-weight: 300;
 }
 
@@ -554,7 +548,7 @@ display:none;
   padding: 3rem 3rem 0rem 3rem;
 }
 
-.landing h2   a {
+.landing h2 a {
 	text-decoration: none;
 	transition: all 0.3s ease-in-out;
 	color: black;
@@ -613,7 +607,7 @@ display:none;
   background-color: transparent;
   color: black;
   border: 2px solid black;
-  border-radius: 15px;
+  border-radius: 5px;
 
  }
 
@@ -627,6 +621,7 @@ display:none;
 
 /*----------------------------ABOUT US----------------------------*/
 
+
 .about-CN {
 	display: flex;
 	flex-direction: column;
@@ -634,34 +629,35 @@ display:none;
 	background-color: white;
 	color: black;
   align-content: flex-start;
-  padding: 4rem 0rem 4rem 0rem;
-
+  text-align: left;
 }
 
 .about-CN h4 {
-	font-size: calc(25px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
-	font-weight: 400;
-	padding: 0rem 4rem 0rem 4rem;
-	text-align: left;
+  font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 200;
+  padding: 2rem 0rem 2rem 5rem;
+  margin-bottom: 0;
 }
 
 .about-CN p {
 	font-size: calc(10px + (60 - 40) * ((100vw - 300px) / (2000 - 300)));
 	font-weight: 100;
-	padding: 0rem 0rem 0rem 4rem;
+	padding: 0rem 0rem 0rem 5rem;
   line-height: 33px;
 }
 .about-split{
   display:flex;
-  padding: 0rem 2rem 0rem 2rem;
-
 }
-.about-sports-img{
-  height: 200px;
-  width: 400px;
+.about-image{
+  height: 300px;
+  width: 470px;
   padding: 0rem 0rem 0rem 2rem;
   padding-left: 3rem;
-
+}
+.sports-icon{
+  height: 10px;
+  width: 10px;
+  padding: 0rem 0rem 0rem 2rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -674,7 +670,7 @@ display:none;
     padding: 0rem 2rem 0rem 2rem;
   }
   .about-CN p {
-  	padding: 0rem 3rem 0rem 3rem;
+  	padding: 0rem 0rem 0rem 3rem;
   }
 }
 
@@ -685,9 +681,9 @@ display:none;
   margin: 4px 50px;
   background-color: #000000;
   padding: 16px 32px;
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 15px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
   margin:10px;
   width:300px;
   margin-left:50px;
@@ -704,19 +700,24 @@ display:none;
 
 /*---------------------------SERVICES---------------------------*/
 
-.service {
 
-	color: black;
-  resize:none;
+.service {
   margin: 0;
+  min-height: 100vh;
+  background-color: white;
+}
+.container{
+  min-height: 65vh;
+
 }
 
 .service h4 {
-	text-align: center;
-	font-size: calc(10px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
-	font-weight: 300;
-	padding: 0rem 3rem 0rem 3rem;
+  text-align: left;
+	font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 200;
+	padding: 4rem 0rem 3rem 4rem;
   resize:none;
+  margin: auto;
 }
 .service h5 {
 	text-align: center;
@@ -726,7 +727,7 @@ display:none;
   resize:none;
 }
 
-.service p {
+.container p {
   text-align: center;
   font-size: 30px;
   font-weight: 300;
@@ -734,42 +735,52 @@ display:none;
   resize:none;
 }
 
+.wwd-p{
+  text-align: left;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 0rem 3rem 0rem 4rem;
+  resize:none;
+  margin: auto;
+}
+
 .item {
     text-align: center;
-    -webkit-box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
-    border-radius: 10px;
-    border:3px solid rgba(0, 0, 0, 0.07);
+    border-radius: 0px;
+    border:2.3px solid rgba(0, 0, 0, 0.04);
     background-color: transparent;
 }
 
 .item:hover{
     background: #F0EFED;
-    box-shadow:0 8px 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
     -webkit-transition: all .5s ease 0;
     transition: all 0.5s ease 0s;
+    -webkit-box-shadow:0 0px 25px rgba(0, 0, 0, 0.10);
+    border-bottom: 5px solid #0198fa;
 }
 
 .man:hover{
-  background-image:  url('./images/CN-4.jpg');
+  background: transparent;
   border-color: none;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  color: transparent;
+  color: black;
 
 }
 .mark:hover{
-  background-image:  url('./images/CN-5.jpg');
+  background: transparent;
   border-color: none;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  color: transparent;
+  color: black;
 }
 .cons:hover{
-  background-image:  url('./images/CN-6.jpg');
+  background: transparent;
   border-color: none;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  color: transparent;
+  color: black;
 }
 
 .item:hover p h4 h5{
@@ -810,11 +821,11 @@ display:none;
 @media(min-width:984px) {
   .item{
     resize: none;
-    margin: 50px 20px 20px 20px;
+    margin: 50px 20px 0px 20px;
   }
   #container {
     display: flex;
-    padding: 1rem 3rem 2rem 3rem;
+    padding: 1rem 3rem 0rem 3rem;
     resize:none;
   }
   .item p{
@@ -826,7 +837,7 @@ display:none;
     text-align: center;
     font-size: calc(10px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
     font-weight: 100;
-    padding: 0rem 3rem 0rem 3rem;
+    padding: 1rem 3rem 1rem 3rem;
     resize:none;
     margin-top: 0;
     margin-bottom: 0;
@@ -844,6 +855,7 @@ display:none;
 
 }
 
+
 /*----------------------------------------------------------------*/
 
 /*----------------------------SPORTS------------------------------*/
@@ -851,53 +863,111 @@ display:none;
 .sports {
 	display: flex;
 	flex-direction: column;
-	min-height: 60vh;
+	min-height: 70vh;
 	background-color: #1A1A1A;
 	color: white;
-  text-align: right;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
+  text-align: left;
 }
 
 .sports h4 {
-	font-size: calc(25px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
-	font-weight: 400;
-	padding: 0rem 4rem 0rem 4rem;
-	text-align: left;
+	font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 200;
+	padding: 2rem 0rem 2rem 5rem;
+  margin-bottom: 0;
+}
+
+.sports h5 {
+	font-size: 20px;
+	font-weight: 200;
+  padding: 0rem 3rem 2em 5rem;
+  margin:auto;
 }
 
 .sports p {
   font-size: calc(10px + (60 - 40) * ((100vw - 300px) / (2000 - 300)));
 	font-weight: 100;
 	padding: 0rem 0rem 0rem 3rem;
-  text-align: left;
+  margin-top:0;
+  line-height: 3px;
 }
 
-.about-split{
+.sports-split{
   display:flex;
+  resize: none;
 }
 
-.about-split img{
-  height: 200px;
-  width: 400px;
-  padding: 0rem 4rem 0rem 3rem;
+.whatwedo-list p{
+  padding-top: 0;
+  margin-left: 0;
+  text-align: left;
+  padding: 0rem 0rem 0rem 0rem;
+
+}
+
+.sports-split .sports-img{
+  height: 500px;
+  width: 460px;
+  padding: 0rem 2rem 0rem 5rem;
+  margin:0;
 }
 
 @media only screen and (max-width: 768px) {
-  .about-split{
+  .sports-split{
     display:block;
-    text-align: center;
+    text-align: left;
   }
-  .about-split img{
-    height: 50%;
-    width: 50%;
-    padding: 0rem 2rem 0rem 2rem;
+  .sports-split .sports-img{
+    height: 500px;
+    width: 460px;
+    padding: 2rem 2rem 2rem 5rem;
+    align-items: center;
   }
   .about-CN p {
-  	padding: 0rem 3rem 0rem 3rem;
+  	padding: 0rem 0rem 0rem 3rem;
+  }
+  .sports p{
+    text-align: left;
+  }
+  .whatwedo-list{
+    padding: 2rem 2rem 0rem 3rem;
+
   }
 }
 
+/*----------------------------------------------------------------*/
 
+/*-----------------------------Main: Section5----------------------------*/
+
+.main-section5{
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  background-color: #1A1A1A;
+  color: white;
+  padding-bottom: 40px;
+  text-align: left;
+}
+
+
+.main-section5 h4{
+  font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 200;
+  padding: 2rem 0rem 2rem 5rem;
+  margin-bottom: 0;
+}
+
+.main-section5 h5{
+  font-size: 20px;
+  font-weight: 200;
+  padding: 0rem 2rem 2em 0rem;
+  margin:auto;
+}
+.div-map{
+  display: flex;
+  padding: 4rem 4rem 4rem 3rem;
+
+}
 
 
 /*----------------------------------------------------------------*/
@@ -933,9 +1003,9 @@ display:none;
   margin: 4px 50px;
   background-color: #000000;
   padding: 16px 32px;
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 15px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 5px;
   margin:10px;
   width:300px;
   margin-left:50px;

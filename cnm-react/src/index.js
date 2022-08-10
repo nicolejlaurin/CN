@@ -19,6 +19,7 @@ import FAQ from './components/faq';
 import Section1 from './components/service-section1';
 import Section2 from './components/service-section2';
 import Section3 from './components/service-section3';
+import MainSection5 from './components/main-section5';
 
 export default function App() {
   return (
@@ -48,8 +49,9 @@ ReactDOM.render(
       <Route path="/" element={<>
   		<Landing />
   		<About />
-  		<Service />
       <Sports />
+      <Service />
+      <MainSection5 />
       <ContactPage />
   		</>} />
       <Route path="/about" element={<About />} />
@@ -59,7 +61,7 @@ ReactDOM.render(
   		<Section1 />
   		<Section2 />
       <Section3 />
-      
+
   		</>} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/client" element={<Client />} />

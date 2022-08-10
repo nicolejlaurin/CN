@@ -17,7 +17,6 @@ export default function App() {
 		<NavBar />
 		<Landing />
 		<About />
-		<Service />
     <Sports />
     <ContactPage />
 		<Footer />

@@ -13,7 +13,7 @@ export default function About() {
       to be seen. We offer services such as sports marketing, player management, personal consultations, NIL education...
       ORR We give players the tools and platform to connect and strategically plan out future plans
       </p>
-    <img src={Img_logo}></img>
+    <img class= "about-image" src={Img_logo}></img>
     </div>
     <button class="button button2" onclick="window.open('https://niclaurin.com/');">Learn more about us!</button>
 
