@@ -501,9 +501,9 @@ display:none;
 	display: flex;
 	flex-direction: column;
 	min-height: 90vh;
-	color: black;
   background-image: url('./images/CN-2.jpg');
   padding-top: 100px;
+  color: black;
   margin-top: 80px;
   overflow:scroll;
 }
@@ -1252,10 +1252,14 @@ display:none;
 .Service-CN {
 	display: flex;
 	flex-direction: column;
-	min-height: 60vh;
-	background-color: white;
-	color: black;
   align-content: flex-start;
+}
+
+.service-split-img{
+  height: 500px;
+  width: 460px;
+  padding: 0rem 2rem 0rem 5rem;
+  margin:0;
 }
 
 .servicepage-header{
@@ -1264,9 +1268,18 @@ display:none;
   width: auto;
 }
 
+.servicepage-header h3{
+  color: white;
+	font-weight: 300;
+	padding: 0rem 3rem 5rem 3rem;
+	text-align: center;
+}
+
+
 .service-split{
   display:flex;
   color: black;
+  resize: none;
 }
 
 .service-split .img{
@@ -1287,15 +1300,6 @@ display:none;
 .white {
   padding-top: 13rem;
   width: 100%;
-}
-
-.Service-CN h3 {
-	font-size: calc(40px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
-	font-weight: 300;
-	padding: 0rem 3rem 5rem 3rem;
-	text-align: center;
-  background-color: #1A1A1A;
-  color: black;
 }
 
 .Service-CN h4 {

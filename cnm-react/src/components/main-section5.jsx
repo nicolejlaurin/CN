@@ -7,7 +7,9 @@ export default () => (
 
 		<div class="div-map">
 		<p className="map-p">test athletes maximize their full potential by giving them the platform to reach perfect audience.	</p>
-			<iframe className="map" width={600} height={500} scrolling={"no"} src="https://www.openstreetmap.org/export/embed.html?bbox=-264.37500000000006%2C-65.80277639340238%2C102.3046875%2C80.17871349622823&amp;layer=cyclemap&amp;marker=25.48295117535531%2C-81.2109375" ></iframe>
+		<iframe className="map" width={850} height={500} scrolling={"no"}  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229968.14750566523!2d-80.31161124768423!3d25.762228611962264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL%2C%20USA!5e0!3m2!1sen!2sca!4v1660266980915!5m2!1sen!2sca"></iframe>
+
+
 		</div>
 	</div>
 
