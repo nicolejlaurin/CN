@@ -1,81 +1,68 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import { NavLink } from "react-router-dom";
-import Img_logo from '../images/CN-1.png';
+import Img_logo from '../images/ice_logo.png';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { Button } from './Button';
 
 function Navigation() {
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if(window.innerWidth <= 960){
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  }
+
+  window.addEventListener('resize', showButton);
   return (
 <body>
-    <input type="checkbox" id="hamburger-input" class="burger-shower"/>
+  <nav className='navbar'>
 
-  <label id="hamburger-menu" for="hamburger-input">
-    <nav id="sidebar-menu">
-      <h3>Menu</h3>
-      <ul>
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/aboutpage">About Us</NavLink>
-        </li>
-        <li>
-          <NavLink  to="/service">Services</NavLink>
-        </li>
-        <li>
-          <NavLink to="/client">Client Representation</NavLink>
-        </li>
-        <li>
-          <NavLink to="/faq">FAQ</NavLink>
-        </li>
-        <li>
-          <NavLink to="/contactpage">Contact</NavLink>
-        </li>
+    <div className='navbar-container'>
 
 
-      </ul>
-    </nav>
-  </label>
+    <div class="navbar-left">
+
+     <a href="/" aria-current="page" class="w-inline-block w--current">
+     <img src={Img_logo} width="100px" href='/' alt="Image"></img>
+     </a>
 
 
-
-  <input type="checkbox" id="hamburger-input" class="burger-shower" />
-
-    <nav className="nav-default" for="hamburger-input">
-
-          <div class="navbar-left">
-            <NavLink to="/">
-            <img src={Img_logo} alt="Image"></img>
-            </NavLink>
+     </div>
 
 
-          </div>
+  <div className='menu-icon' onClick={handleClick}>
+    <i className={click ? 'fa fa-times':'fa fa-bars'}></i>
+  </div>
+
+  <ul className={click ? 'nav-menu active':'nav-menu'}>
+  <li>
+    <NavLink to="/" className='nav-links' onClick={closeMobileMenu}>Home</NavLink>
+  </li>
+  <li>
+    <NavLink to="/aboutpage" className='nav-links' onClick={closeMobileMenu}>About Us</NavLink>
+  </li>
+  <li>
+    <NavLink  to="/service" className='nav-links' onClick={closeMobileMenu}>Services</NavLink>
+  </li>
+  <li>
+    <NavLink to="/faq" className='nav-links' onClick={closeMobileMenu}>FAQ</NavLink>
+  </li>
+  <li>
+    <NavLink to="/contactpage" className='nav-links' onClick={closeMobileMenu}>Contact</NavLink>
+  </li>
+
+  </ul>
 
 
-          <ul class="nav-links">
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/aboutpage">About Us</NavLink>
-            </li>
-            <li>
-              <NavLink  to="/service">Services</NavLink>
-            </li>
-          
-            <li>
-              <NavLink to="/faq">FAQ</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contactpage">Contact</NavLink>
-            </li>
-          </ul>
-      </nav>
-
-      <div class="overlay"></div>
-
-
-      <script type="text/javascript" src="../script.js">
-
-          </script>
+</div>
+</nav>
 
 </body>
 

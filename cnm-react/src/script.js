@@ -1,3 +1,16 @@
+import { Link } from 'gatsby';
+
+export default function Header() {
+<Button
+    as={Link}
+    to="/components/aboutpage"
+  	variant="text">
+     	Get Started
+  </Button>
+}
+
+
+
 
 const navSlide = () =>{
   const burger = document.querySelector(".burger");

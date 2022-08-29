@@ -4,13 +4,14 @@ import Img_logo from '../images/CN-9.jpg';
 export default () => (
 
 	<div className='aboutpage-CN'>
-	<div class= 'header-image' >
-	</div>
+
 
 	<div className='abt-back'>
 		<h4>
 		ABOUT US
 		</h4>
+
+
 		<p>
 			CN Agency provides all the necessary services to further an athletes abilities and giving them a platform
       to be seen. We offer services such as sports marketing, player management, personal consultations, NIL education...
@@ -25,6 +26,7 @@ export default () => (
 	</div>
 		<div className='abt-back2'>
 		<h4> Our Values</h4>
+		<hr className="underline"></hr>
 		<div className='abt-p'>
 		<div>
 		<h5> Integrity </h5>

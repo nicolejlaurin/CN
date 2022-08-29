@@ -7,30 +7,28 @@ export default () => (
 	<h4 >What We Do</h4>
 	<p className="wwd-p">
 	We help athletes maximize their full potential by giving them the platform to reach perfect audience.	</p>
-	<div id="container" class="container">
+	<div class="container">
     <div class="item man"> <span class="icon feature_box_col_one"></span>
 		<br></br>
-		<FaChartLine size={70} color={'black'} ></FaChartLine>
+		<FaChartLine className="service-icons" color={'black'} ></FaChartLine>
     <h4>Management</h4>
 		<p>
-			CN Agency provides all the necessary services to further an athletes abilities and giving them a platform
-      to be seen. We offer services such as sports marketing, player management, personal consultations, NIL education...
+		Cold Global Enterprises has formed many relationships across the basketball industry ranging from the NBA, FIBA, International, etc. Our management team works closely with our clients to maximize the opportunities we can provide with a wide variety of resources on and off the court.
 		</p>
     </div>
 
     <div class="item mark"> <span class="icon feature_box_col_two"></span>
 		<br></br>
-    <FaCode size={70}></FaCode>
+    <FaCode className="service-icons"></FaCode>
     <h4>Marketing</h4>
     <p>
-      CN Agency provides all the necessary services to further an athletes abilities and giving them a platform
-      to be seen. We offer services such as sports marketing, player management, personal consultations, NIL education...
-    </p>
+		Cold Global Enterprises believes each and every client deserves hands-on attention. Our dynamic marketing strategy primarily focuses on finding our clients the best fit and organic brand partnerships. We want to ensure that every opportunity provided can lead to fruitful and long-lasting relationships. We assist our clients with professional marketing, media, branding, and public relations.We believe in bringing your brand and entrepreneurial spirit to life.
+		  </p>
     </div>
 
     <div class="item cons"> <span class="icon feature_box_col_three"></span>
 		<br></br>
-    <FaWeixin size={70}></FaWeixin>
+    <FaWeixin className="service-icons"></FaWeixin>
     <h4>Consultation</h4>
     <p>
       CN Agency provides all the necessary services to further an athletes abilities and giving them a platform

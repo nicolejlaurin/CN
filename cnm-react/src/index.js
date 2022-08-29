@@ -52,7 +52,7 @@ ReactDOM.render(
       <Sports />
       <Service />
       <MainSection5 />
-      <ContactPage />
+      <Contact />
   		</>} />
       <Route path="/about" element={<About />} />
       <Route path="/aboutpage" element={<AboutPage />} />

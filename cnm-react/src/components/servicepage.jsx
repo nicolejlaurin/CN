@@ -4,15 +4,9 @@ import Img_logo2 from '../images/CN-23.jpg';
 
 export default () => (
 	<div className='Service-CN'>
-	<div className='servicepage-header'>
-	<h3>
-	Our services
-	</h3>
-
-	</div>
-
-	<div class="service-split">
-		<img class="service-split-img" src={Img_logo}></img>
+		<h4>
+		OUR SERVICES
+		</h4>
 
 				<p>
 				let us help you design a strategic plan to prepare your future. CN Agency provides all the necessary services to further an athletes abilities and giving them a platform
@@ -20,7 +14,5 @@ export default () => (
 				ORR We give players the tools and platform to connect and strategically plan out future plans
 
 				</p>
-
-	</div>
 	</div>
 );
