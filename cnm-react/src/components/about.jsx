@@ -1,21 +1,23 @@
 import React from 'react';
-import Img_logo from '../images/CN-27.jpg';
+import Img_logo from '../images/CN-29.jpg';
 import SecondPage from './aboutpage';
+import { Link }  from 'react-router-dom';
+
 
 export default function About() {
   return (
 	<div className='about-CN'>
 		<h4>
-    Choosing a team that strives for your success.
+    Our Mission
     </h4>
-    <div class="about-split">
-    <div class="about-split-left">
+    <div class='about-split'>
+    <div class='about-split-left'>
 		<p>
-			CN Agency provides all the necessary services to further an athletes abilities and giving them a platform
-      to be seen. We offer services such as sports marketing, player management, personal consultations, NIL education...
-      ORR We give players the tools and platform to connect and strategically plan out future plans
+		Here at Cold Global Enterprises, we value all our relationships with our clients and partners. We focus heavily on brand development for our clients.  We want each and every client to have a meaningful and positive impact on and off the court. Our agency provides brand management, marketing, career advisor, image management, public relations, personal development, and more. We have a close knit relationship with our athletes and are able to be  personable with our client needs.
       </p>
-      <button class="button button2" type="about-button" onclick="document.location='./aboutpage.jsx'">Learn more about us!</button>
+    <Link to='/aboutpage'>
+      <button className="about-button button2" >Learn more about us!</button>
+    </Link>
     </div>
     <img class= "about-image" src={Img_logo}></img>
     </div>

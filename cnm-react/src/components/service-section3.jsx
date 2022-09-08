@@ -1,5 +1,5 @@
 import React from 'react';
-import Img_logo from '../images/CN-15.jpg';
+import Img_logo from '../images/CN-34.jpg';
 
 
 export default () => (
@@ -11,14 +11,10 @@ export default () => (
 		<h4>
 		Consultation
 		</h4>
-
-				<p>
-				Consultation - N Agency provides all the necessary services to further an athletes
-				abilities and giving them a platform to be seen. We offer services such as sports
-				marketing, player management, personal consultations, NIL education... ORR We give players the tools and platform to connect and strategically plan out future plans
-
-				</p>
-</div>
+		<p>
+		Our company takes pride in creating and implementing the right marketing strategies for our clients and brands. Cold Global Enterprises will advise our clients with marketing plans and tactics to help you achieve your business goal, target markets, and marketing campaigns. Please contact us if you have any questions or would like to consult with us in further detail about our personalized services.
+		</p>
+		</div>
 	</div>
 
 	</div>

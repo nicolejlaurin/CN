@@ -3,7 +3,7 @@ import React from 'react';
 export default () => (
 	<div class="main-section5">
 		<h4 >What We Do</h4>
-		<h5 >We help athletes maximize their full potential by giving them the platform to reach perfect audience.	</h5>
+		<p >We help athletes maximize their full potential by giving them the platform to reach perfect audience.	</p>
 
 		<div class="div-map">
 		<p className="map-p">test athletes maximize their full potential by giving them the platform to reach perfect audience.	</p>

@@ -4,10 +4,8 @@ import { FaLaravel, FaUsb, FaWeixin, FaCalendarCheck, FaChartLine, FaCode, FaCod
 
 export default () => (
 	<div class="service">
-	<h4 >What We Do</h4>
-	<p className="wwd-p">
-	We help athletes maximize their full potential by giving them the platform to reach perfect audience.	</p>
-	<div class="container">
+	<h4 >What We Provide</h4>
+		<div class="container">
     <div class="item man"> <span class="icon feature_box_col_one"></span>
 		<br></br>
 		<FaChartLine className="service-icons" color={'black'} ></FaChartLine>
@@ -31,8 +29,7 @@ export default () => (
     <FaWeixin className="service-icons"></FaWeixin>
     <h4>Consultation</h4>
     <p>
-      CN Agency provides all the necessary services to further an athletes abilities and giving them a platform
-      to be seen. We offer services such as sports marketing, player management, personal consultations, NIL education...
+Our company takes pride in creating and implementing the right marketing strategies for our clients and brands. Cold Global Enterprises will advise our clients with marketing plans and tactics to help you achieve your business goal, target markets, and marketing campaigns. Please contact us if you have any questions or would like to consult with us in further detail about our personalized services.
     </p>
     </div>
 		</div>

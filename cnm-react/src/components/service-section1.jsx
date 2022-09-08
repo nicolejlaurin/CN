@@ -1,5 +1,5 @@
 import React from 'react';
-import Img_logo from '../images/CN-15.jpg';
+import Img_logo from '../images/CN-33.png';
 
 export default () => (
 	<div className='section1-CN'>
@@ -8,7 +8,7 @@ export default () => (
 		<img class="service-split-img" src={Img_logo}></img>
 		<div>
 		<h4>
-			Management
+		Management
 		</h4>
 		<p>
 		Cold Global Enterprises has formed many relationships across the basketball industry ranging from the NBA, FIBA, International, etc. Our management team works closely with our clients to maximize the opportunities we can provide with a wide variety of resources on and off the court.

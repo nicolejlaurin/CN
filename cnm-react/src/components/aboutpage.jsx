@@ -13,16 +13,9 @@ export default () => (
 
 
 		<p>
-			CN Agency provides all the necessary services to further an athletes abilities and giving them a platform
-      to be seen. We offer services such as sports marketing, player management, personal consultations, NIL education...
-      ORR We give players the tools and platform to connect and strategically plan out future plans
+		Cold Global Enterprises is dedicated to providing the highest quality representation that will plan, support, and guide our clients throughout their entire professional life. We excel with a different approach in the sports business world. We understand playing careers don’t last forever, but we create sports entrepreneurs.Our company is committed to creating an inclusive and diverse workspace, building long lasting relationships beyond its contractual.
     </p>
-		<p>
-		CN Management is an integrated sports management company based in Miami FL.
-		CNM is dedicated to providing the highest quality representation that will plan, support and guide our clients throughout their entire professional life.
-		Our company is committed to creating an inclusive and diverse workspace, building long lasting relationships beyond its contractual
-		 for athletes to excel and succeed.
-	</p>
+
 	</div>
 		<div className='abt-back2'>
 		<h4> Our Values</h4>
@@ -30,15 +23,15 @@ export default () => (
 		<div className='abt-p'>
 		<div>
 		<h5> Integrity </h5>
-		<p>  We value strong morals and positive values held at the core of CNM. </p>
+		<p> We model high character, strong morals, and positive core values at CGE.</p>
 		</div>
 		<div>
 		<h5> Respect </h5>
-		<p>  Respect is a guiding value to building our family and reaching our mission. </p>
+		<p>  Respect is a guiding value on how to treat people and our dignity at CGE. </p>
 		</div>
 		<div>
 		<h5> Inclusiveness </h5>
-		<p>  We are committed to creating a community open to accepting all people.  </p>
+		<p>  We value every client. This is the culture we created at our boutique style agency.  </p>
 		</div>
 		</div>
 		</div>

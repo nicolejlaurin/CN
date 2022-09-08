@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import NavBar from './components/navbar';
 import Landing from './components/landing';
 import About from './components/about';
 import AboutPage from './components/aboutpage';
@@ -24,7 +23,6 @@ import MainSection5 from './components/main-section5';
 export default function App() {
   return (
     <div className='app'>
-		<NavBar />
 		<Landing />
 		<About />
 		<Service />
@@ -49,9 +47,8 @@ ReactDOM.render(
       <Route path="/" element={<>
   		<Landing />
   		<About />
-      <Sports />
       <Service />
-      <MainSection5 />
+      <Sports />
       <Contact />
   		</>} />
       <Route path="/about" element={<About />} />
@@ -68,6 +65,7 @@ ReactDOM.render(
       <Route path="/sports" element={<Sports />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/contactpage" element={<ContactPage />} />
+      <Route path="/servicepage" element={<ServicePage />} />
     </Routes>
     <Footer />
   </Router>,

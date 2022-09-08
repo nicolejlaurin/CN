@@ -1,26 +1,32 @@
 import React from 'react';
-import Img_logo from '../images/CN-25.png';
+import Img_logo from '../images/CN-28.jpg';
 import Icon_logo from '../images/right-arrow.png';
 import { FaCaretRight, FaChevronRight, FaAngleDoubleRight} from 'react-icons/fa';
+import { Link }  from 'react-router-dom';
 
 
 export default () => (
 	<div className='sports'>
-	<h4>What We do</h4>
-	<h5>Our highly-experienced team guide our players through their entire journey, connecting them to the right people and brands to enhance their career to a whole new level.</h5>
+	<h4>How We Provide</h4>
+	<p>Sports marketing is constantly evolving and endorsements are becoming more lucrative. We help build personal brands and synergize corporate brands through talent partnerships. Taking the entrepreneurial approach to prepare our athletes for life after sports.</p>
 		<div class="sports-split">
+		<div className="sports-split-left">
 			<img class="sports-img" src={Img_logo}></img>
+			<Link to='/service'>
+			<button class="sports-button button3" >BOOK YOUR CONSULTATION</button>
+			</Link>
+			</div>
 			<div class="whatwedo-list">
-		<p><FaChevronRight></FaChevronRight> Games, tournaments, and events</p>
-		<p><FaChevronRight></FaChevronRight> Marketing and branding/brand identity</p>
-		<p><FaChevronRight></FaChevronRight> NIL - Name, Image, Likeness </p>
-		<p><FaChevronRight></FaChevronRight> Social Media Managementement</p>
-		<p><FaChevronRight></FaChevronRight> Endorsement Deals</p>
-		<p><FaChevronRight></FaChevronRight> Camp activations</p>
-		<p><FaChevronRight></FaChevronRight> Autograph signing</p>
-		<p><FaChevronRight></FaChevronRight> Sponsorship package development, sales and activation</p>
-		<p><FaChevronRight></FaChevronRight> Social media strategy development and coaching</p>
-		<p><FaChevronRight></FaChevronRight> Photography and Videography</p>
+			<p><FaChevronRight className="sports-icon"></FaChevronRight> Sponsorships</p>
+			<p><FaChevronRight className="sports-icon"></FaChevronRight> Partnerships</p>
+			<p><FaChevronRight className="sports-icon"></FaChevronRight> Endorsements</p>
+			<p><FaChevronRight className="sports-icon"></FaChevronRight> NILs - Name, Image, Likeness </p>
+			<p><FaChevronRight className="sports-icon"></FaChevronRight> Activations </p>
+			<p><FaChevronRight className="sports-icon"></FaChevronRight> Branding</p>
+			<p><FaChevronRight className="sports-icon"></FaChevronRight> Commercials and Radio</p>
+			<p><FaChevronRight className="sports-icon"></FaChevronRight> Campaigns</p>
+			<p><FaChevronRight className="sports-icon"></FaChevronRight> Social Media Management</p>
+			<p><FaChevronRight className="sports-icon"></FaChevronRight> Personalized Content Creation</p>
 		</div>
 		</div>
 	</div>
