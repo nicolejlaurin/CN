@@ -4,9 +4,9 @@ import { FaLaravel, FaUsb, FaWeixin, FaCalendarCheck, FaChartLine, FaCode, FaCod
 
 export default () => (
 	<div class="service">
-	<h4 >What We Provide</h4>
+	<h4 class='animated reveal fade-bottom'>What We Provide</h4>
 		<div class="container">
-    <div class="item man"> <span class="icon feature_box_col_one"></span>
+    <div class="item man animated reveal fade-bottom"> <span class="icon feature_box_col_one"></span>
 		<br></br>
 		<FaChartLine className="service-icons" color={'black'} ></FaChartLine>
     <h4>Management</h4>
@@ -15,7 +15,7 @@ export default () => (
 		</p>
     </div>
 
-    <div class="item mark"> <span class="icon feature_box_col_two"></span>
+    <div class="item mark animated reveal fade-bottom"> <span class="icon feature_box_col_two"></span>
 		<br></br>
     <FaCode className="service-icons"></FaCode>
     <h4>Marketing</h4>
@@ -24,7 +24,7 @@ export default () => (
 		  </p>
     </div>
 
-    <div class="item cons"> <span class="icon feature_box_col_three"></span>
+    <div class="item cons animated reveal fade-bottom"> <span class="icon feature_box_col_three"></span>
 		<br></br>
     <FaWeixin className="service-icons"></FaWeixin>
     <h4>Consultation</h4>

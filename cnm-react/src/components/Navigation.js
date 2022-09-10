@@ -1,8 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from "react-router-dom";
-import Img_logo from '../images/ice_logo.png';
+import Img_logo from '../images/logo1.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Button } from './Button';
+import { useLocation } from "react-router";
+
+const ScrollToTop = (props) => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return <>{props.children}</>
+};
+
 
 function Navigation() {
   const [click, setClick] = useState(false);
@@ -23,24 +34,17 @@ function Navigation() {
   return (
 <body>
   <nav className='navbar'>
-
     <div className='navbar-container'>
-
-
     <div class="navbar-left">
-
      <a href="/" aria-current="page" class="w-inline-block w--current">
-     <img src={Img_logo} width="100px" href='/' alt="Image"></img>
+     <img src={Img_logo} href='/' alt="Image"></img>
      </a>
-
-
      </div>
-
-
   <div className='menu-icon' onClick={handleClick}>
     <i className={click ? 'fa fa-times':'fa fa-bars'}></i>
   </div>
 
+  <ScrollToTop>
   <ul className={click ? 'nav-menu active':'nav-menu'}>
   <li>
     <NavLink to="/" className='nav-links' onClick={closeMobileMenu}>Home</NavLink>
@@ -51,15 +55,13 @@ function Navigation() {
   <li>
     <NavLink  to="/service" className='nav-links' onClick={closeMobileMenu}>Services</NavLink>
   </li>
-  <li>
-    <NavLink to="/faq" className='nav-links' onClick={closeMobileMenu}>FAQ</NavLink>
-  </li>
+
   <li>
     <NavLink to="/contactpage" className='nav-links' onClick={closeMobileMenu}>Contact</NavLink>
   </li>
 
   </ul>
-
+</ScrollToTop>
 
 </div>
 </nav>

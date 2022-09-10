@@ -8,9 +8,7 @@ export default () => (
 		OUR SERVICES
 		</h4>
 		<p>
-		let us help you design a strategic plan to prepare your future. CN Agency provides all the necessary services to further an athletes abilities and giving them a platform
-		to be seen. We offer services such as sports marketing, player management, personal consultations, NIL education...
-		ORR We give players the tools and platform to connect and strategically plan out future plans.
+		Cold Global Enterprises believes in finding the right alignment between our athletes and brands. Ensuring that our clients build their personal brand, work in their niche, and share their story. We facilitate successful partnerships.
 		</p>
 	</div>
 );

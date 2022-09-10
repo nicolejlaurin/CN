@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link }  from 'react-router-dom';
+import 'animate.css';
 
 
 export default () => (
@@ -8,10 +9,9 @@ export default () => (
 			COLD GLOBAL ENTERPRISES
 		</h2>
 		<div className='info'>
-			<p>Amplifying athletes name, image, likeness, and voices.</p>
-			<p>Creating long lasting legacies and building brands to inspire more than just the sports industry.</p>
+			<p class="animated fadeInUp">Amplifying athletes name, image, likeness, and voices. Creating long lasting legacies and building brands to inspire more than just the sports industry.</p>
 			<Link to='/contactpage'>
-			<button className="button button1">BOOK YOUR CONSULTATION</button>
+			<button className="button1">BOOK YOUR CONSULTATION</button>
 			</Link>
 
 

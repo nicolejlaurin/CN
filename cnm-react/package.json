@@ -33,6 +33,7 @@
     ]
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "babel-preset-react": "^6.24.1",
     "gh-pages": "^4.0.0",
     "grommet-icons": "^4.7.0",
