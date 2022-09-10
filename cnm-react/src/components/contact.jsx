@@ -21,7 +21,7 @@ export default () => (
 			id="contact"
 			encType="multipart/form-data"
 			autoComplete="off"
-			action="https://formsubmit.co/nicolejunelaurin@gmail.com"
+			action="https://formsubmit.co/clinoel2016@gmail.com"
 			method="post"
 			data-netlify-recaptcha="true"
 			 data-netlify="true"
@@ -47,10 +47,10 @@ export default () => (
 				tabindex="2" required></input>
 	    </fieldset>
 	    <fieldset>
-	      <input placeholder="Your Phone Number" type="tel" tabindex="3" required></input>
+	      <input placeholder="Your Phone Number" type="tel" tabindex="3"></input>
 	    </fieldset>
 	    <fieldset>
-	      <input placeholder="Your Instagram" type="text" tabindex="4" required></input>
+	      <input placeholder="Your Instagram" type="text" tabindex="4"></input>
 	    </fieldset>
 	    <fieldset>
 	      <textarea placeholder="Type your Message Here...." tabindex="5"   name="message"
