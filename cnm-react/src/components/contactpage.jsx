@@ -3,7 +3,7 @@ import Img_logo from '../images/CN-8.jpg';
 
 export default () => (
 	<div class="contact-div">
-	<div class="contact-split">
+		<div class="contact-split">
 	<div class="contact-split-left">
 	<h3>Contact Us</h3>
 	<p className="contact-msg">We would love to hear from you.</p>
@@ -16,26 +16,49 @@ export default () => (
 	</div>
 </div>
 	</div>
-  <form id="contact" action="" method="post">
-    <fieldset>
-      <input placeholder="Your name" type="text" tabindex="1" required autofocus></input>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" required></input>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Phone Number" type="tel" tabindex="3" required></input>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Instagram" type="url" tabindex="4" required></input>
-    </fieldset>
-    <fieldset>
-      <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    </fieldset>
-  </form>
+	<form
+		id="contact"
+		encType="multipart/form-data"
+		autoComplete="off"
+		action="https://formsubmit.co/coldglobalenterprises@gmail.com"
+		method="POST"
+		data-netlify-recaptcha="true"
+		 data-netlify="true"
+		 onSubmit="submit"
+		data-netlify-honeypot="bot-field">
+		<input type="hidden" name="_subject" value="New email from Portfolio!"></input>
+				<input type="hidden" name="_captcha" value="false"></input>
+				<input type="hidden" name="_next" value="https://coldglobalenterprises.com/thankyou.html"></input>
+
+		<div hidden>
+			<input name="bot-field"></input>
+		</div>
+
+		<fieldset>
+			<input placeholder="Your name" tabindex="1"   name="name"
+				type="text"
+			 required autofocus></input>
+		</fieldset>
+		<fieldset>
+			<input placeholder="Your Email Address"   name="email"
+				type="text"
+			tabindex="2" required></input>
+		</fieldset>
+		<fieldset>
+			<input placeholder="Your Phone Number" type="tel" tabindex="3"></input>
+		</fieldset>
+		<fieldset>
+			<input placeholder="Your Instagram" type="text" tabindex="4"></input>
+		</fieldset>
+		<fieldset>
+			<textarea placeholder="Type your Message Here...." tabindex="5"   name="message"
+
+				required></textarea>
+		</fieldset>
+		<fieldset>
+			<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+		</fieldset>
+	</form>
 	</div>
 	</div>
 
