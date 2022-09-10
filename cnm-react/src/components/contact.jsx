@@ -22,7 +22,7 @@ export default () => (
 			encType="multipart/form-data"
 			autoComplete="off"
 			action="https://formsubmit.co/coldglobalenterprises@gmail.com"
-			method="post"
+			method="POST"
 			data-netlify-recaptcha="true"
 			 data-netlify="true"
 			 onSubmit="submit"
@@ -30,7 +30,7 @@ export default () => (
 			<input type="hidden" name="form-name" value="contact" ></input>
 			<input type="hidden" name="_subject" value="New email from Portfolio!"></input>
 					<input type="hidden" name="_captcha" value="false"></input>
-					<input type="hidden" name="_next" value="./thankyou.html"></input>
+					<input type="hidden" name="_next" value="https://coldglobalenterprises.com/thankyou.html"></input>
 
 			<div hidden>
 				<input name="bot-field"></input>
