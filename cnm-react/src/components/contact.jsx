@@ -30,7 +30,7 @@ export default () => (
 			<input type="hidden" name="form-name" value="contact" ></input>
 			<input type="hidden" name="_subject" value="New email from Portfolio!"></input>
 					<input type="hidden" name="_captcha" value="false"></input>
-					<input type="hidden" name="_next" value=""></input>
+					<input type="hidden" name="_next" value="https://coldglobalenterprises/thankyou.html"></input>
 
 			<div hidden>
 				<input name="bot-field"></input>
