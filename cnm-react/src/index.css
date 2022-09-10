@@ -2184,3 +2184,43 @@ fieldset {
 }
 
 /*----------------------------*/
+
+.thankyou{
+  	text-align: center;
+  	display: flex;
+  	flex-direction: column;
+    background-image: url('./images/CN-36.png');
+    padding-top: 30px;
+    color: black;
+    background-size: 100rem;
+    margin-top: 80px;
+
+}
+
+.thankyou h4{
+  padding: 10rem;
+  text-align: center;
+  font-size: calc(40px + (90 - 40) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 500px) {
+  .thankyou{
+    	text-align: center;
+    	display: flex;
+    	flex-direction: column;
+      padding-top: 80px;
+      color: black;
+      background-size: 100rem;
+      margin-top: 80px;
+      height: 40rem;
+  }
+  .thankyou h4{
+    padding: 5rem;
+    text-align: center;
+    font-size: calc(40px + (90 - 40) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 500;
+  }
+
+
+}

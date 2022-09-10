@@ -19,6 +19,7 @@ import Section1 from './components/service-section1';
 import Section2 from './components/service-section2';
 import Section3 from './components/service-section3';
 import MainSection5 from './components/main-section5';
+import Thankyou from './components/thankyou';
 
 export default function App() {
   return (
@@ -66,6 +67,7 @@ ReactDOM.render(
       <Route path="/contact" element={<Contact />} />
       <Route path="/contactpage" element={<ContactPage />} />
       <Route path="/servicepage" element={<ServicePage />} />
+      <Route path="/thankyou" element={<Thankyou />} />
     </Routes>
     <Footer />
   </Router>,
