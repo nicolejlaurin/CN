@@ -339,8 +339,8 @@ body p{
     width: auto;
   }
   .landing h2 {
-  	font-size: 38px;
-    padding: 3rem 3rem 5rem 3rem;
+  	font-size: 40px;
+    padding: 5rem 3rem 5rem 3rem;
     font-weight: 500;
     margin: 0;
     word-wrap: break-word
@@ -348,7 +348,7 @@ body p{
   .landing p{
     font-size: 14px;
   	font-weight: 200;
-  	padding: 3rem 3rem 0rem 3rem;
+  	padding: 1rem 3rem 0rem 3rem;
     margin:0;
     line-height: 1.3rem;
   }
