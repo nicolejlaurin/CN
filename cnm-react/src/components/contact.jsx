@@ -50,7 +50,7 @@ export default () => (
 	      <input placeholder="Your Phone Number" type="tel" tabindex="3" required></input>
 	    </fieldset>
 	    <fieldset>
-	      <input placeholder="Your Instagram" type="test" tabindex="4" required></input>
+	      <input placeholder="Your Instagram" type="text" tabindex="4" required></input>
 	    </fieldset>
 	    <fieldset>
 	      <textarea placeholder="Type your Message Here...." tabindex="5"   name="message"
