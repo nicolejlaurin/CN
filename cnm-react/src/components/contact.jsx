@@ -1,5 +1,7 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Img_logo from '../images/CN-8.jpg';
+
 
 export default () => (
 	<div class="container2">
@@ -15,12 +17,34 @@ export default () => (
 					</div>
 				</div>
 			</div>
-	  <form id="contact" action="" method="post">
+	  <form
+			id="contact"
+			encType="multipart/form-data"
+			autoComplete="off"
+			action="https://formsubmit.co/nicolejunelaurin@gmail.com"
+			method="post"
+			data-netlify-recaptcha="true"
+			 data-netlify="true"
+			 onSubmit="submit"
+			data-netlify-honeypot="bot-field">
+			<input type="hidden" name="form-name" value="contact" ></input>
+			<input type="hidden" name="_subject" value="New email from Portfolio!"></input>
+					<input type="hidden" name="_captcha" value="false"></input>
+					<input type="hidden" name="_next" value="https://niclaurin.com/thankyou.html"></input>
+
+			<div hidden>
+				<input name="bot-field"></input>
+			</div>
+
 	    <fieldset>
-	      <input placeholder="Your name" type="text" tabindex="1" required autofocus></input>
+	      <input placeholder="Your name" tabindex="1"   name="name"
+					type="text"
+				 required autofocus></input>
 	    </fieldset>
 	    <fieldset>
-	      <input placeholder="Your Email Address" type="email" tabindex="2" required></input>
+	      <input placeholder="Your Email Address"   name="email"
+					type="text"
+				tabindex="2" required></input>
 	    </fieldset>
 	    <fieldset>
 	      <input placeholder="Your Phone Number" type="tel" tabindex="3" required></input>
@@ -29,7 +53,9 @@ export default () => (
 	      <input placeholder="Your Instagram" type="url" tabindex="4" required></input>
 	    </fieldset>
 	    <fieldset>
-	      <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+	      <textarea placeholder="Type your Message Here...." tabindex="5"   name="message"
+
+					required></textarea>
 	    </fieldset>
 	    <fieldset>
 	      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
