@@ -11,7 +11,7 @@ export default () => (
 		Management
 		</h4>
 		<p>
-		Cold Global Enterprises has formed many relationships across the basketball industry ranging from the NBA, FIBA, International, etc. Our management team works closely with our clients to maximize the opportunities we can provide with a wide variety of resources on and off the court.
+		Pro-Found has formed many relationships across the basketball industry ranging from the NBA, FIBA, International, etc. Our management team works closely with our clients to maximize the opportunities we can provide with a wide variety of resources on and off the court.
 		</p>
 		</div>
 	</div>

@@ -14,7 +14,7 @@ export default function About() {
     Our Mission
     </h4>
 		<p>
-		Here at Cold Global Enterprises, we value all our relationships with our clients and partners. We focus heavily on brand development for our clients.  We want each and every client to have a meaningful and positive impact on and off the court. Our agency provides brand management, marketing, career advisor, image management, public relations, personal development, and more. We have a close knit relationship with our athletes and are able to be  personable with our client needs.
+		Here at Pro-Found, we value all our relationships with our clients and partners. We focus heavily on brand development for our clients.  We want each and every client to have a meaningful and positive impact on and off the court. Our agency provides brand management, marketing, career advisor, image management, public relations, personal development, and more. We have a close knit relationship with our athletes and are able to be  personable with our client needs.
       </p>
     <Link to='/aboutpage'>
       <button className="about-button button2" >Learn more about us!</button>

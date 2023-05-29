@@ -12,7 +12,7 @@ export default () => (
 		Consultation
 		</h4>
 		<p>
-		Our company takes pride in creating and implementing the right marketing strategies for our clients and brands. Cold Global Enterprises will advise our clients with marketing plans and tactics to help you achieve your business goal, target markets, and marketing campaigns. Please contact us if you have any questions or would like to consult with us in further detail about our personalized services.
+		Our company takes pride in creating and implementing the right marketing strategies for our clients and brands. Pro-Found will advise our clients with marketing plans and tactics to help you achieve your business goal, target markets, and marketing campaigns. Please contact us if you have any questions or would like to consult with us in further detail about our personalized services.
 		</p>
 		</div>
 	</div>
