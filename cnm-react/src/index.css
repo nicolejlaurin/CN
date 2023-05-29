@@ -267,7 +267,7 @@ body p{
 
 .landing h2 {
 	font-size: 15rem;
-  padding: 3rem 3rem 5rem 3rem;
+  padding: 1rem 3rem 2rem 3rem;
   font-weight: 500;
   margin: 0;
 font-family: 'Bebas Neue', sans-serif;
@@ -276,7 +276,7 @@ font-family: 'Bebas Neue', sans-serif;
 .landing p{
   font-size: 20px;
   font-weight: 100;
-  padding: 4rem 3rem 0rem 6rem;
+  padding: 3rem 3rem 0rem 6rem;
   margin:0;
 }
 
@@ -303,7 +303,16 @@ font-family: 'Bebas Neue', sans-serif;
 }
 
 @media(min-width:768px) {
-  .landing p{
+
+	.landing h2 {
+		font-size: 13rem;
+	  padding: 1rem 3rem 2rem 3rem;
+	  font-weight: 500;
+	  margin: 0;
+	font-family: 'Bebas Neue', sans-serif;
+	}
+
+	.landing p{
     font-size: 20px;
   	font-weight: 400;
     padding-left: 3rem;
@@ -353,8 +362,8 @@ font-family: 'Bebas Neue', sans-serif;
     width: auto;
   }
   .landing h2 {
-		font-size: 5rem;
-    padding: 5rem 3rem 5rem 3rem;
+		font-size: 6rem;
+    padding: 3rem 2rem 5rem 2rem;
     font-weight: 500;
     margin: 0;
     word-wrap: break-word
