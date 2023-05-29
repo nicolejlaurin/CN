@@ -45,10 +45,10 @@ body p{
 }
 
 .navbar-left img{
-  width: 110px;
-  height: 90px;
-  float: center;
-  padding: 1rem 5rem 0rem 0rem;
+  width: 250px;
+  height: 200px;
+  float: left;
+	padding: 0.5rem 14rem 0rem 0rem;
 }
 
 
@@ -78,13 +78,6 @@ body p{
     transition: all 0.2s ease-out;
   }
 
-
-  .navbar-left img{
-    width: 110px;
-    height: 90px;
-    float: left;
-    padding: 0.5rem 17rem 0rem 0rem;
-  }
 
 
   .navbar-left{
@@ -171,8 +164,8 @@ body p{
   }
 
   .navbar-left img{
-    width: 100px;
-    height: 80px;
+		width: 200px;
+    height: 160px;
     float: left;
     padding: 0.5rem 40rem 0rem 0rem;
     position:sticky;
@@ -184,8 +177,8 @@ body p{
 @media screen and (max-width: 700px) {
 
   .navbar-left img{
-    width: 90px;
-    height: 70px;
+    width: 200px;
+    height: 160px;
     padding: 0rem 25rem 0rem 0rem;
 
   }
@@ -195,18 +188,37 @@ body p{
 @media screen and (max-width: 500px) {
 
   .navbar-left img{
-    width: 90px;
-    height: 70px;
+    width: 180px;
+    height: 140px;
     padding: 0rem 18rem 0rem 0rem;
 
   }
+
+	    .nav-links {
+	      display:flex;
+	      background-color: #1A1A1A;
+	      font-size: 13px;
+	      font-weight: lighter;
+	      color: #fff;
+	      text-decoration: none;
+	      padding: 1.5rem;
+				padding-left: 0;
+	      justify-content: center;
+	    }
+
+	    .nav-links:hover {
+	      color: #afdeb7;
+	      transform: scaleY(1.1);
+	      transition: 0.3s;
+	    }
+
 }
 
 @media screen and (max-width: 300px) {
 
   .navbar-left img{
-    width: 65px;
-    height: 50px;
+		width: 160px;
+    height: 120px;
     padding: 0rem 13rem 0rem 0rem;
 
   }
@@ -250,13 +262,15 @@ body p{
   color: black;
   background-size: 100rem;
   margin-top: 80px;
+
 }
 
 .landing h2 {
-	font-size: calc(60px + (90 - 40) * ((100vw - 300px) / (1600 - 300)));
+	font-size: 15rem;
   padding: 3rem 3rem 5rem 3rem;
   font-weight: 500;
   margin: 0;
+font-family: 'Bebas Neue', sans-serif;
 }
 
 .landing p{
@@ -314,6 +328,9 @@ body p{
     width: auto;
     height: 40rem;
   }
+	.landing h2{
+		font-size: 10rem;
+	}
   .landing p{
     font-size: calc(10px + (50 - 35) * ((100vw - 300px) / (1600 - 300)));
   	font-weight: 400;
@@ -327,9 +344,6 @@ body p{
   .button1 {
   	font-size:12px;
   }
-
-
-
 }
 
 @media only screen and (max-width: 500px) {
@@ -339,12 +353,13 @@ body p{
     width: auto;
   }
   .landing h2 {
-  	font-size: 40px;
+		font-size: 5rem;
     padding: 5rem 3rem 5rem 3rem;
     font-weight: 500;
     margin: 0;
     word-wrap: break-word
   }
+
   .landing p{
     font-size: 14px;
   	font-weight: 200;

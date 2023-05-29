@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from "react-router-dom";
-import Img_logo from '../images/logo1.png';
+import Img_logo from '../images/logo3.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Button } from './Button';
 import { useLocation } from "react-router";
@@ -37,7 +37,7 @@ function Navigation() {
     <div className='navbar-container'>
     <div class="navbar-left">
      <a href="/" aria-current="page" class="w-inline-block w--current">
-     <img src={Img_logo} href='/' alt="Image"></img>
+     <img class="logo" src={Img_logo} href='/' alt="Image"></img>
      </a>
      </div>
   <div className='menu-icon' onClick={handleClick}>

@@ -6,7 +6,7 @@ import 'animate.css';
 export default () => (
 	<div className='landing'>
 		<h2>
-			COLD GLOBAL ENTERPRISES
+			PRO-FOUND
 		</h2>
 		<div className='info'>
 			<p class="animated fadeInUp">Amplifying athletes name, image, likeness, and voices. Creating long lasting legacies and building brands to inspire more than just the sports industry.</p>
