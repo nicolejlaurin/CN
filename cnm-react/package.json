@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/nicolejlaurin/CN/issues"
   },
-  "homepage": "https://nicolejlaurin.github.io/CN/cnm-react",
+  "homepage": "https://nicolejlaurin.github.io/CN",
   "browserslist": {
     "production": [
       ">0.2%",
