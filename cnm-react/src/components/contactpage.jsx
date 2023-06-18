@@ -28,7 +28,7 @@ export default () => (
 		data-netlify-honeypot="bot-field">
 		<input type="hidden" name="_subject" value="New email from Portfolio!"></input>
 				<input type="hidden" name="_captcha" value="false"></input>
-				<input type="hidden" name="_next" value="https://coldglobalenterprises.com/thankyou"></input>
+				<input type="hidden" name="_next" value="https://profoundrep.com/thankyou"></input>
 
 		<div hidden>
 			<input name="bot-field"></input>
