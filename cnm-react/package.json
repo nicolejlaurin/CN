@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/nicolejlaurin/CN/issues"
   },
-  "homepage": "https://nicolejlaurin.github.io/CN",
+  "homepage": "https://nicolejlaurin.github.io",
   "browserslist": {
     "production": [
       ">0.2%",
